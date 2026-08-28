@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List Life Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div id="nav-date"></div>
+    <div id="nav-time"></div>
+  </nav>
+
+  <!-- Dashboard -->
+  <main id="dashboard">
+    <!-- Greeting Widget (sapaan + quote) -->
+    <section id="greeting-widget">
+      <p id="greeting-error" hidden></p>
+      <h1 id="greeting-message"></h1>
+      <div class="name-input-row">
+        <label for="name-input" class="sr-only">Nama</label>
+        <input type="text" id="name-input" placeholder="Namamu..." maxlength="30">
+      </div>
+      <div id="mini-quote" class="mini-quote">
+        <p id="quote-text" class="quote-text"></p>
+      </div>
+
+      <!-- Dog Mascot -->
+      <div class="dog-mascot" id="dog-mascot" role="img" aria-label="Anjing maskot lucu">
+        <div class="dog-body">
+          <div class="dog-tail"></div>
+          <div class="dog-ears">
+            <div class="dog-ear dog-ear-left"></div>
+            <div class="dog-ear dog-ear-right"></div>
+          </div>
+          <div class="dog-head">
+            <div class="dog-eyes">
+              <div class="dog-eye dog-eye-left">
+                <div class="dog-pupil"></div>
+              </div>
+              <div class="dog-eye dog-eye-right">
+                <div class="dog-pupil"></div>
+              </div>
+            </div>
+            <div class="dog-cheeks">
+              <div class="dog-cheek dog-cheek-left"></div>
+              <div class="dog-cheek dog-cheek-right"></div>
+            </div>
+            <div class="dog-nose"></div>
+            <div class="dog-mouth"></div>
+            <div class="dog-tongue" id="dog-tongue"></div>
+          </div>
+          <div class="dog-paws">
+            <div class="dog-paw dog-paw-left"></div>
+            <div class="dog-paw dog-paw-right"></div>
+          </div>
+        </div>
+        <div class="dog-speech" id="dog-speech"></div>
+      </div>
+    </section>
+
+    <!-- Focus Timer Widget -->
+    <section id="timer-widget">
+      <h2 class="widget-title">Fokus</h2>
+      <div class="timer-duration">
+        <label for="timer-duration-select" class="duration-label">Durasi</label>
+        <select id="timer-duration-select" class="duration-select">
+          <option value="5">5 mnt</option>
+          <option value="15">15 mnt</option>
+          <option value="25" selected>25 mnt</option>
+          <option value="30">30 mnt</option>
+          <option value="45">45 mnt</option>
+          <option value="60">60 mnt</option>
+        </select>
+      </div>
+      <div class="timer-progress">
+        <svg viewBox="0 0 120 120" class="timer-svg">
+          <circle class="timer-bg-circle" cx="60" cy="60" r="54"/>
+          <circle class="timer-fill-circle" id="timer-fill-circle" cx="60" cy="60" r="54"/>
+        </svg>
+        <div id="timer-display">25:00</div>
+      </div>
+      <p id="timer-finished-indicator" hidden>Waktu habis! 🎉</p>
+      <div class="timer-controls">
+        <button id="timer-start-btn">Mulai</button>
+        <button id="timer-stop-btn" disabled>Jeda</button>
+        <button id="timer-reset-btn">Ulang</button>
+      </div>
+    </section>
+
+    <!-- Todo List Widget -->
+    <section id="todo-widget">
+      <h2 class="widget-title">Tugas Hari Ini</h2>
+      <div class="todo-input-row">
+        <input type="text" id="todo-input" placeholder="Tambah tugas baru..." maxlength="255">
+        <button id="todo-add-btn">Tambah</button>
+      </div>
+      <div id="todo-input-error" class="error-message" hidden></div>
+      <div id="todo-storage-error" class="error-message" hidden></div>
+      <div class="todo-header">
+        <span>Belum selesai: <span id="todo-count-badge">0</span></span>
+        <select id="todo-sort-select" class="todo-sort-select">
+          <option value="newest">Terbaru</option>
+          <option value="oldest">Terlama</option>
+          <option value="unfinished">Belum selesai dulu</option>
+          <option value="alpha">A-Z</option>
+        </select>
+      </div>
+      <ul id="todo-list"></ul>
+      <aside id="todo-empty" class="todo-empty">
+        <div class="empty-dog">🐕</div>
+        <p class="empty-title">Belum ada tugas!</p>
+        <p class="empty-sub">Tambah tugas baru di atas</p>
+      </aside>
+    </section>
+
+    <!-- Quick Links Widget -->
+    <section id="quicklinks-widget">
+      <h2 class="widget-title">Link Penting</h2>
+      <div class="link-input-row">
+        <input type="text" id="link-label-input" placeholder="Label" maxlength="50">
+        <input type="text" id="link-url-input" placeholder="https://...">
+        <button id="link-add-btn">Tambah</button>
+      </div>
+      <div id="link-label-error" class="error-message" hidden></div>
+      <div id="link-url-error" class="error-message" hidden></div>
+      <div id="link-storage-error" class="error-message" hidden></div>
+      <div id="link-limit-error" class="error-message" hidden></div>
+      <div id="link-list"></div>
+    </section>
+  </main>
+
+  <!-- Paw Prints Container -->
+  <div id="paw-prints-container" class="paw-prints-container"></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

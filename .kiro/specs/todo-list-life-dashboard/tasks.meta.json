@@ -1,0 +1,250 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Buat struktur direktori proyek dan file utama": [
+      {
+        "executionId": "135b9210-db85-45d9-868f-55006b5506bd",
+        "chatSessionId": "sess_7dc5c214-ad04-44b4-9d14-f5ded1eb7385",
+        "timestamp": 1787837108013
+      },
+      {
+        "executionId": "135b9210-db85-45d9-868f-55006b5506bd",
+        "chatSessionId": "sess_7dc5c214-ad04-44b4-9d14-f5ded1eb7385",
+        "timestamp": 1787837537208
+      }
+    ],
+    "1.2 Inisialisasi package.json dan konfigurasi Vitest + fast-check": [
+      {
+        "executionId": "135b9210-db85-45d9-868f-55006b5506bd",
+        "chatSessionId": "sess_7dc5c214-ad04-44b4-9d14-f5ded1eb7385",
+        "timestamp": 1787837112432
+      },
+      {
+        "executionId": "135b9210-db85-45d9-868f-55006b5506bd",
+        "chatSessionId": "sess_7dc5c214-ad04-44b4-9d14-f5ded1eb7385",
+        "timestamp": 1787837542443
+      }
+    ],
+    "1. Scaffolding struktur proyek dan konfigurasi testing": [
+      {
+        "executionId": "135b9210-db85-45d9-868f-55006b5506bd",
+        "chatSessionId": "sess_7dc5c214-ad04-44b4-9d14-f5ded1eb7385",
+        "timestamp": 1787837542496
+      }
+    ],
+    "2.1 Implementasi `StorageManager` di `js/app.js`": [
+      {
+        "executionId": "f14de7f4-c274-4286-a69e-36cab6e0224f",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787837689892
+      },
+      {
+        "executionId": "f14de7f4-c274-4286-a69e-36cab6e0224f",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787837801803
+      }
+    ],
+    "2.2 Implementasi `Validator` di `js/app.js`": [
+      {
+        "executionId": "f14de7f4-c274-4286-a69e-36cab6e0224f",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787837694855
+      },
+      {
+        "executionId": "f14de7f4-c274-4286-a69e-36cab6e0224f",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787837806277
+      }
+    ],
+    "2. Implementasi StorageManager dan Validator": [
+      {
+        "executionId": "f14de7f4-c274-4286-a69e-36cab6e0224f",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787837806346
+      }
+    ],
+    "3.1 Implementasi helper functions `formatTime`, `formatDate`, `getGreeting`": [
+      {
+        "executionId": "471ec572-a9b9-4c1f-bf4a-f88cf5e0c76b",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787837900668
+      },
+      {
+        "executionId": "471ec572-a9b9-4c1f-bf4a-f88cf5e0c76b",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787837911742
+      },
+      {
+        "executionId": "471ec572-a9b9-4c1f-bf4a-f88cf5e0c76b",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787838058500
+      }
+    ],
+    "3.2 Implementasi `GreetingController.init()` di `js/app.js`": [
+      {
+        "executionId": "471ec572-a9b9-4c1f-bf4a-f88cf5e0c76b",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787837900725
+      },
+      {
+        "executionId": "471ec572-a9b9-4c1f-bf4a-f88cf5e0c76b",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787838074000
+      },
+      {
+        "executionId": "471ec572-a9b9-4c1f-bf4a-f88cf5e0c76b",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787838168093
+      }
+    ],
+    "4.1 Implementasi helper function `formatTimer` dan state machine `FocusTimerController`": [
+      {
+        "executionId": "471ec572-a9b9-4c1f-bf4a-f88cf5e0c76b",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787837900803
+      },
+      {
+        "executionId": "471ec572-a9b9-4c1f-bf4a-f88cf5e0c76b",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787837912610
+      },
+      {
+        "executionId": "471ec572-a9b9-4c1f-bf4a-f88cf5e0c76b",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787838059306
+      }
+    ],
+    "4.2 Implementasi render state tombol dan indikator FINISHED": [
+      {
+        "executionId": "471ec572-a9b9-4c1f-bf4a-f88cf5e0c76b",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787837900872
+      },
+      {
+        "executionId": "471ec572-a9b9-4c1f-bf4a-f88cf5e0c76b",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787838074402
+      },
+      {
+        "executionId": "471ec572-a9b9-4c1f-bf4a-f88cf5e0c76b",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787838168987
+      }
+    ],
+    "5. Checkpoint — Pastikan semua test phase awal lulus": [
+      {
+        "executionId": "471ec572-a9b9-4c1f-bf4a-f88cf5e0c76b",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787837900919
+      },
+      {
+        "executionId": "471ec572-a9b9-4c1f-bf4a-f88cf5e0c76b",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787838189853
+      },
+      {
+        "executionId": "471ec572-a9b9-4c1f-bf4a-f88cf5e0c76b",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787838742611
+      }
+    ],
+    "6.1 Implementasi `TodoController.init()` dan fungsi render daftar task": [
+      {
+        "executionId": "471ec572-a9b9-4c1f-bf4a-f88cf5e0c76b",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787837900967
+      }
+    ],
+    "6.2 Implementasi `TodoController.addTask(text)` dan badge counter": [
+      {
+        "executionId": "471ec572-a9b9-4c1f-bf4a-f88cf5e0c76b",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787837901016
+      }
+    ],
+    "6.3 Implementasi `TodoController.editTask(id, newText)`": [
+      {
+        "executionId": "471ec572-a9b9-4c1f-bf4a-f88cf5e0c76b",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787837901066
+      }
+    ],
+    "6.4 Implementasi `TodoController.toggleTask(id)` dan `deleteTask(id)`": [
+      {
+        "executionId": "471ec572-a9b9-4c1f-bf4a-f88cf5e0c76b",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787837901119
+      }
+    ],
+    "7.1 Implementasi `QuickLinksController.init()` dan fungsi render daftar link": [
+      {
+        "executionId": "471ec572-a9b9-4c1f-bf4a-f88cf5e0c76b",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787837901169
+      }
+    ],
+    "7.2 Implementasi `QuickLinksController.addLink(label, url)`": [
+      {
+        "executionId": "471ec572-a9b9-4c1f-bf4a-f88cf5e0c76b",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787837901215
+      }
+    ],
+    "7.3 Implementasi `QuickLinksController.openLink(url)` dan `deleteLink(id)`": [
+      {
+        "executionId": "471ec572-a9b9-4c1f-bf4a-f88cf5e0c76b",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787837901268
+      }
+    ],
+    "8.1 Implementasi `AppInitializer` dan periksa ketersediaan `localStorage`": [
+      {
+        "executionId": "471ec572-a9b9-4c1f-bf4a-f88cf5e0c76b",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787837901320
+      }
+    ],
+    "8.2 Pasang event listeners untuk semua widget di `AppInitializer`": [
+      {
+        "executionId": "471ec572-a9b9-4c1f-bf4a-f88cf5e0c76b",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787837901370
+      }
+    ],
+    "9.1 Tulis layout utama dan styling semua widget di `css/style.css`": [
+      {
+        "executionId": "471ec572-a9b9-4c1f-bf4a-f88cf5e0c76b",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787837901444
+      }
+    ],
+    "9.2 Implementasi responsivitas untuk layar minimal 320px": [
+      {
+        "executionId": "471ec572-a9b9-4c1f-bf4a-f88cf5e0c76b",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787837901511
+      }
+    ],
+    "10. Checkpoint Final — Verifikasi integrasi dan jalankan semua test": [
+      {
+        "executionId": "471ec572-a9b9-4c1f-bf4a-f88cf5e0c76b",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787837901564
+      }
+    ],
+    "3. Implementasi `GreetingController`": [
+      {
+        "executionId": "471ec572-a9b9-4c1f-bf4a-f88cf5e0c76b",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787838168133
+      }
+    ],
+    "4. Implementasi `FocusTimerController`": [
+      {
+        "executionId": "471ec572-a9b9-4c1f-bf4a-f88cf5e0c76b",
+        "chatSessionId": "sess_b3ab6545-b218-415f-a66c-5f22413bc98d",
+        "timestamp": 1787838169030
+      }
+    ]
+  }
+}

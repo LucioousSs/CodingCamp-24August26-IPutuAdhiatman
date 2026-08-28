@@ -1,0 +1,29 @@
+{
+  "name": "codingcamp-24august26-iputuadhiatman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest --run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest --run --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucioousSs/CodingCamp-24August26-IPutuAdhiatman.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/LucioousSs/CodingCamp-24August26-IPutuAdhiatman/issues"
+  },
+  "homepage": "https://github.com/LucioousSs/CodingCamp-24August26-IPutuAdhiatman#readme",
+  "devDependencies": {
+    "@vitest/coverage-v8": "4.1.11",
+    "fast-check": "4.9.0",
+    "jsdom": "26.1.0",
+    "vitest": "4.1.11"
+  }
+}
