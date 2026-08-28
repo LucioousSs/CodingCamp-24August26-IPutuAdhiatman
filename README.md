@@ -1,5 +1,7 @@
 # Todo List Life Dashboard
 
+<img width="1920" height="967" alt="image" src="https://github.com/user-attachments/assets/ceccc83d-4c3b-4bfc-959e-575ef6f58d9f" />
+
 Aplikasi web client-side untuk mengelola produktivitas harian dengan empat widget utama: Greeting, Focus Timer, To-Do List, dan Quick Links.
 
 ## Features
