@@ -621,6 +621,11 @@ const DogMascotController = {
 
   /**
    * Render ekspresi anjing berdasarkan waktu.
+   * Sync dengan getGreeting():
+   *   Pagi:  05:00 – 11:59
+   *   Siang: 12:00 – 14:59
+   *   Sore:  15:00 – 17:59
+   *   Malam: 18:00 – 04:59
    */
   _render() {
     const mascot = document.getElementById('dog-mascot');
@@ -631,14 +636,18 @@ const DogMascotController = {
     // Hapus semua state
     mascot.classList.remove('sleeping', 'awake', 'happy');
 
-    // Set state berdasarkan waktu
-    if (hour >= 22 || hour < 5) {
+    // Set state berdasarkan waktu (sinkron dengan getGreeting)
+    if (hour >= 18 || hour < 5) {
+      // Malam: sleeping
       mascot.classList.add('sleeping');
     } else if (hour >= 5 && hour < 12) {
+      // Pagi: awake
       mascot.classList.add('awake');
-    } else if (hour >= 12 && hour < 17) {
+    } else if (hour >= 12 && hour < 15) {
+      // Siang: awake + happy
       mascot.classList.add('awake', 'happy');
     } else {
+      // Sore (15-17): awake
       mascot.classList.add('awake');
     }
 
@@ -648,6 +657,11 @@ const DogMascotController = {
 
   /**
    * Tampilkan pesan acak sesuai waktu.
+   * Sinkron dengan getGreeting():
+   *   Pagi:  05:00 – 11:59
+   *   Siang: 12:00 – 14:59
+   *   Sore:  15:00 – 17:59
+   *   Malam: 18:00 – 04:59
    * @param {number} hour
    */
   _maybeShowMessage(hour) {
@@ -660,8 +674,8 @@ const DogMascotController = {
 
     let period;
     if (hour >= 5 && hour < 12) period = 'morning';
-    else if (hour >= 12 && hour < 17) period = 'afternoon';
-    else if (hour >= 17 && hour < 22) period = 'evening';
+    else if (hour >= 12 && hour < 15) period = 'afternoon';
+    else if (hour >= 15 && hour < 18) period = 'evening';
     else period = 'night';
 
     const messages = this._messages[period];
@@ -699,8 +713,8 @@ const DogMascotController = {
       const hour = new Date().getHours();
       let period;
       if (hour >= 5 && hour < 12) period = 'morning';
-      else if (hour >= 12 && hour < 17) period = 'afternoon';
-      else if (hour >= 17 && hour < 22) period = 'evening';
+      else if (hour >= 12 && hour < 15) period = 'afternoon';
+      else if (hour >= 15 && hour < 18) period = 'evening';
       else period = 'night';
 
       const messages = this._messages[period];
