@@ -634,21 +634,21 @@ const DogMascotController = {
     const hour = new Date().getHours();
 
     // Hapus semua state
-    mascot.classList.remove('sleeping', 'awake', 'happy');
+    mascot.classList.remove('sleeping', 'awake', 'happy', 'morning', 'afternoon', 'evening', 'night');
 
     // Set state berdasarkan waktu (sinkron dengan getGreeting)
     if (hour >= 18 || hour < 5) {
       // Malam: sleeping
-      mascot.classList.add('sleeping');
+      mascot.classList.add('sleeping', 'night');
     } else if (hour >= 5 && hour < 12) {
-      // Pagi: awake
-      mascot.classList.add('awake');
+      // Pagi: awake + stretch
+      mascot.classList.add('awake', 'morning');
     } else if (hour >= 12 && hour < 15) {
-      // Siang: awake + happy
-      mascot.classList.add('awake', 'happy');
+      // Siang: awake + happy + wag tail cepat
+      mascot.classList.add('awake', 'happy', 'afternoon');
     } else {
-      // Sore (15-17): awake
-      mascot.classList.add('awake');
+      // Sore (15-17): awake + calm
+      mascot.classList.add('awake', 'evening');
     }
 
     // Tampilkan pesan sesekali

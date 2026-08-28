@@ -532,6 +532,99 @@ section:hover {
 }
 
 /* ============================================================
+   Period-specific Animations
+   ============================================================ */
+
+/* Morning: Stretching animation */
+.dog-mascot.morning {
+  animation: stretch 3s ease-in-out infinite;
+}
+
+.dog-mascot.morning .dog-ear-left {
+  animation: earWiggle 2s ease-in-out infinite;
+}
+
+.dog-mascot.morning .dog-ear-right {
+  animation: earWiggle 2s ease-in-out infinite 0.3s;
+}
+
+@keyframes stretch {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  25% { transform: scale(1.05) rotate(-2deg); }
+  75% { transform: scale(1.05) rotate(2deg); }
+}
+
+@keyframes earWiggle {
+  0%, 100% { transform: rotate(-15deg); }
+  50% { transform: rotate(-25deg); }
+}
+
+/* Afternoon: Happy bouncing */
+.dog-mascot.afternoon {
+  animation: bounce 1.5s ease-in-out infinite;
+}
+
+.dog-mascot.afternoon .dog-tail {
+  animation: wagTail 0.5s ease-in-out infinite;
+}
+
+.dog-mascot.afternoon .dog-tongue {
+  animation: pant 0.8s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes pant {
+  0%, 100% { height: 10px; }
+  50% { height: 14px; }
+}
+
+/* Evening: Calm swaying */
+.dog-mascot.evening {
+  animation: sway 4s ease-in-out infinite;
+}
+
+.dog-mascot.evening .dog-tail {
+  animation: wagTail 2s ease-in-out infinite;
+}
+
+@keyframes sway {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-3deg); }
+  75% { transform: rotate(3deg); }
+}
+
+/* Night: Sleeping with Zzz */
+.dog-mascot.night {
+  animation: breathe 3s ease-in-out infinite;
+}
+
+.dog-mascot.night::after {
+  content: 'z';
+  position: absolute;
+  top: -10px;
+  right: -5px;
+  font-size: 12px;
+  color: var(--text-muted);
+  animation: floatZzz 2s ease-in-out infinite;
+  opacity: 0.7;
+}
+
+@keyframes breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+}
+
+@keyframes floatZzz {
+  0% { transform: translateY(0) translateX(0); opacity: 0.7; }
+  50% { transform: translateY(-10px) translateX(5px); opacity: 1; }
+  100% { transform: translateY(-20px) translateX(10px); opacity: 0; }
+}
+
+/* ============================================================
    Focus Timer Widget
    ============================================================ */
 #timer-widget {
